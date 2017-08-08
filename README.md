@@ -7,4 +7,4 @@ Changelog:
 future plans
 - popup for browser action with toggles for both normal and firefox ui changes
 - possible firefox ui changing
-- settings page with storage and link from popup, with the comicsansifier script checking what the settings are
+- settings page with storage and link from popup, which changes both the storage and the icon dependion on active or inactive, and with the comicsansifier script checking what the settings are
