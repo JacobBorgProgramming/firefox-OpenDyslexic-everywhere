@@ -24,7 +24,7 @@
 			"match_about_blank": true,
 			"matches": ["<all_urls>"],
 			"js": ["comicsansifier.js"],
-			"run_at": "document_end"
+			"run_at": "document_start"
 		}
 	]
 
