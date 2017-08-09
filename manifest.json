@@ -5,7 +5,7 @@
 	"version": "1.1",
 
 	"description": "Firefox addon that changes the font of every piece of text into Comic Sans MS",
-	"homepage_url": "https://github.com/pieterman2000/fiirefox-comic-sans-everywhere",
+	"homepage_url": "https://github.com/pieterman2000/firefox-comic-sans-everywhere",
 	"icons": {
 		"48": "icon_active.png"
 	},
