@@ -14,7 +14,7 @@
 	"browser_action": {
 		"browser_style": true,
 		"default_icon": "icon_active.png",
-		//TODO: default_popup
+		"default_popup": "popup_options.html",
 		"default_title": "Comic Sans MS active"
 	},
 
