@@ -6,13 +6,24 @@ function addsavelistener(){
 	textset();
 }
 
+function icon(web, ui){
+	//console.log(web);
+	if(web ^ ui)
+		browser.browserAction.setIcon({path: "icon_partially.png"});
+	else
+		browser.browserAction.setIcon({path: 
+		(web ? "icon_active.png" : "icon_inactive.png")
+	});
+}
+
 // also for ui
 function savewebpage(){
-	webpage = ~webpage;
+	webpage = !webpage;
 	browser.storage.local.set({
 		webpage: webpage
 	});
 	browser.tabs.reload();
+	icon(webpage, true);
 	window.location.reload();
 }
 

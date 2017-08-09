@@ -1,23 +1,42 @@
 function addsavelistener(){
 
-	document.getElementById("webpage_checkbox").addEventListener("change", save);
+	webpagebox = document.getElementById("webpage_checkbox");
+	ui = true; //TODO: goed maken ook voor ui
+
+	webpagebox.addEventListener("change", savewebpage);
 	//TODO: also for ui_checkbox
 
 	checkboxset();
 }
 
-function save(){
-	// also for ui
-	browser.storage.local.set({
-		webpage: document.getElementById("webpage_checkbox").checked
+function icon(web, ui){
+	if(web ^ ui)
+		browser.browserAction.setIcon({path: "icon_partially.png"});
+	else
+		browser.browserAction.setIcon({path: 
+		(web ? "icon_active.png" : "icon_inactive.png")
 	});
+}
+
+function savewebpage(){
+	// also for ui
+
+	browser.storage.local.set({
+		webpage: webpagebox.checked
+	});
+
+	icon(webpagebox.checked, true);
+
 }
 
 function checkboxset(){
 
 	function setcheckbox(result){
-		document.getElementById("webpage_checkbox").checked = result.webpage;
+		
+		webpagebox.checked = result.webpage;
 		// also for ui_checkbox
+
+		icon(webpagebox.checked, true);
 	}
 
 	function error(error){
@@ -27,5 +46,7 @@ function checkboxset(){
 	thing = browser.storage.local.get();
 	thing.then(setcheckbox, error);
 }
+
+var webpagebox;
 
 document.addEventListener("DOMContentLoaded", addsavelistener);
