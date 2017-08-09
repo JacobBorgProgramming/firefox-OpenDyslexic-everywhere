@@ -12,3 +12,7 @@ future plans
 - popup for browser action with toggles for both normal and firefox ui changes
 - possible firefox ui changing
 - settings page with storage and link from popup, which changes both the storage and the icon dependion on active or inactive, and with the comicsansifier script checking what the settings are
+
+If not on windows, you might need to install the font on your system. https://www.howtogeek.com/howto/15495/add-microsoft-core-fonts-to-ubuntu/
+ 
+See for chrome addon (and a part of the inspiration for this addon) https://github.com/719Ben/Comic-Sans-Everything
