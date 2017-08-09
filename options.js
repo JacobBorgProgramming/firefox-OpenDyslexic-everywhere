@@ -7,16 +7,16 @@ function addsavelistener(){
 }
 
 function save(){
-	webpage = document.getElementById("webpage_checkbox").value;
 	// also for ui
-
+	browser.storage.local.set({
+		webpage: document.getElementById("webpage_checkbox").checked
+	});
 }
 
 function checkboxset(){
 
 	function setcheckbox(result){
-		console.log(result);
-		document.getElementById("webpage_checkbox").value = result;
+		document.getElementById("webpage_checkbox").checked = result.webpage;
 		// also for ui_checkbox
 	}
 
@@ -24,7 +24,7 @@ function checkboxset(){
 		console.log(error);
 	}
 
-	thing = browser.storage.local.get("pages");
+	thing = browser.storage.local.get();
 	thing.then(setcheckbox, error);
 }
 
