@@ -1,5 +1,6 @@
 # fiirefox-comic-sans-everywhere
-Firefox addon that changes the font of every piece of text into Comic Sans MS
+Firefox addon that changes the font of every piece of text into Comic Sans MS.
+Features an options page in about:addons for settings, and can be toggled through a toolbar button.
 
 firefox addon: https://addons.mozilla.org/en-US/firefox/addon/comic-sans-everywhere/
 
