@@ -7,6 +7,7 @@ Changelog:
 - 1.0 basic functionality
 - 1.1 options page with saved settings
 - 1.2 popup for toggling settings quickly
+- 1.3 small fix
 
 future plans
 - popup for browser action with toggles for both normal and firefox ui changes

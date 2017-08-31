@@ -4,6 +4,7 @@ function addsavelistener(){
 	//TODO: also for ui_link
 
 	textset();
+	icon(webpage, ui);
 }
 
 function icon(web, ui){
