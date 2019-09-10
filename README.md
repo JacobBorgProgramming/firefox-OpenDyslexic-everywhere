@@ -18,3 +18,16 @@ future plans
 If not on windows, you might need to install the font on your system. https://www.howtogeek.com/howto/15495/add-microsoft-core-fonts-to-ubuntu/
  
 See for chrome addon (and a part of the inspiration for this addon) https://github.com/719Ben/Comic-Sans-Everything
+
+
+ieder letter andere kleur
+gradienten
+knipper/epilepsie
+scherm trilt
+ondersteboven
+scherm draait rond
+onafhankelijke letters draaien rond
+onafhankelijke dingen draaien rond
+iedere afbeelding een kattenplaatje oid
+iets met jodenkoeken
+www effect jimmy neutron
